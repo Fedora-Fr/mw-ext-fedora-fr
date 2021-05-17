@@ -1,0 +1,35 @@
+{
+	"name": "FedoraFr",
+	"version": "1.0",
+	"author": [
+    "Guillaume Kulakowski",
+		"Pascal Parois"
+	],
+	"url": "https://www.fedora-fr.org/",
+	"license-name": "GPL-2.0",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.34"
+	},
+	"MessagesDirs": {
+	},
+	"AutoloadNamespaces": {
+		"FedoraFr\\": "src/"
+	},
+  "ExtensionMessagesFiles": {
+  },
+	"ResourceFileModulePaths": {
+	},
+	"ResourceModules": {
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "FedoraFr\\Parser::onParserFirstCallInit"
+	},
+	"attributes": {
+	},
+	"config": {
+	},
+	"TrackingCategories": [
+	],
+	"manifest_version": 2
+}
