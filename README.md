@@ -1,5 +1,7 @@
 # FedoraFr
 
+[![Tests](https://github.com/Fedora-Fr/mw-fedorafr/actions/workflows/qa.yaml/badge.svg)](https://github.com/Fedora-Fr/mw-fedorafr/actions/workflows/qa.yaml)
+
 Legacy and historical extension used by Fedora-Fr documentation.
 
 ## Features

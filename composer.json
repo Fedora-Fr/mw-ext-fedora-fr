@@ -34,8 +34,8 @@
 			"vendor/bin/minus-x check ."
 		],
 		"fix": [
-			"minus-x fix .",
-			"phpcbf"
+			"vendor/bin/minus-x fix .",
+			"vendor/bin/phpcbf"
 		],
 		"phan": "phan -d . --long-progress-bar"
 	}
