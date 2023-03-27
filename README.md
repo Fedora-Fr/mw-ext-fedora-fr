@@ -2,7 +2,7 @@
 
 [![Tests](https://github.com/Fedora-Fr/mw-fedorafr/actions/workflows/qa.yaml/badge.svg)](https://github.com/Fedora-Fr/mw-fedorafr/actions/workflows/qa.yaml)
 
-Legacy and historical MediaWiki extension used by Fedora-Fr documentation.
+Historical MediaWiki extension used by Fedora-Fr documentation.
 
 ## Features
 
