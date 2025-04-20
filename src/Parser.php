@@ -44,7 +44,7 @@ class Parser {
 	 * @param array $argv Argument passed to the render.
 	 * @param mwParser $parser MediaWiki Parser.
 	 * @param PPFrame $frame MediaWiki PPFrame.
-	 * @return String String parsed.
+	 * @return string String parsed.
 	 */
 	public static function renderPath( ?string $text, array $argv, mwParser $parser, PPFrame $frame ) {
 		return '<tt>' . htmlspecialchars( $text ) . '</tt>';
@@ -59,7 +59,7 @@ class Parser {
 	 * @param array $argv Argument passed to the render.
 	 * @param mwParser $parser MediaWiki Parser.
 	 * @param PPFrame $frame MediaWiki PPFrame.
-	 * @return String String parsed.
+	 * @return string String parsed.
 	 */
 	public static function renderKey( ?string $text, array $argv, mwParser $parser, PPFrame $frame ) {
 		return '<strong>[' . htmlspecialchars( $text ) . ']</strong>';
@@ -74,7 +74,7 @@ class Parser {
 	 * @param array $argv Argument passed to the render.
 	 * @param mwParser $parser MediaWiki Parser.
 	 * @param PPFrame $frame MediaWiki PPFrame.
-	 * @return String String parsed.
+	 * @return string String parsed.
 	 */
 	public static function renderApp( ?string $text, array $argv, mwParser $parser, PPFrame $frame ) {
 		return '<strong>' . htmlspecialchars( $text ) . '</strong>';
@@ -89,7 +89,7 @@ class Parser {
 	 * @param array $argv Argument passed to the render.
 	 * @param mwParser $parser MediaWiki Parser.
 	 * @param PPFrame $frame MediaWiki PPFrame.
-	 * @return String String parsed.
+	 * @return string String parsed.
 	 */
 	public static function renderPacket( ?string $text, array $argv, mwParser $parser, PPFrame $frame ) {
 		return '<tt>' . htmlspecialchars( $text ) . '</tt>';
@@ -104,7 +104,7 @@ class Parser {
 	 * @param array $argv Argument passed to the render.
 	 * @param mwParser $parser MediaWiki Parser.
 	 * @param PPFrame $frame MediaWiki PPFrame.
-	 * @return String String parsed.
+	 * @return string String parsed.
 	 */
 	public static function renderMenu( ?string $text, array $argv, mwParser $parser, PPFrame $frame ) {
 		return '« <em>' . htmlspecialchars( preg_replace( '/[-]+>/u', '→', $text ) ) . '</em> »';
@@ -119,7 +119,7 @@ class Parser {
  * @param array $argv Argument passed to the render.
  * @param mwParser $parser MediaWiki Parser.
  * @param PPFrame $frame MediaWiki PPFrame.
- * @return String String parsed.
+ * @return string String parsed.
  */
 	public static function renderCmd( ?string $text, array $argv, mwParser $parser, PPFrame $frame ) {
 		return '<tt>' . htmlspecialchars( $text ) . '</tt>';
@@ -134,7 +134,7 @@ class Parser {
 	 * @param array $argv Argument passed to the render.
 	 * @param mwParser $parser MediaWiki Parser.
 	 * @param PPFrame $frame MediaWiki PPFrame.
-	 * @return String String parsed.
+	 * @return string String parsed.
 	 */
 	public static function renderEnVrac( ?string $text, array $argv, mwParser $parser, PPFrame $frame ) {
 		if ( empty( $args['nbre'] ) ) {
