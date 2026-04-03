@@ -172,7 +172,7 @@ class Parser {
 			__METHOD__,
 			[
 				'ORDER BY' => 'RAND()',
-				'LIMIT' => "${args['nbre']}"
+				'LIMIT' => "{$args['nbre']}"
 			]
 		);
 
