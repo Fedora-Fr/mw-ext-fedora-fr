@@ -20,13 +20,3 @@ Historical MediaWiki extension used by Fedora-Fr documentation.
 
 * Copy and rename folder in FedoraFr in `extensions` MediaWiki directory.
 * Add `wfLoadExtension( 'FedoraFr' );` in `localsettings.php`
-
-## ChangeLog
-
-### Version 1.0
-
-- Port to MW 1.35.
-
-### Version 0.1
-
-- First version
