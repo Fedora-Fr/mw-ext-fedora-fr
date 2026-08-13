@@ -1,24 +1,28 @@
 name: Tests
-
 on:
   [push, pull_request]
 
 jobs:
-  tests:
 
+  ##############################################################################
+  # Tests job
+  #
+  test_php:
     runs-on: ubuntu-latest
-
+    name: Test
+    strategy:
+      fail-fast: false
+      matrix:
+        php-version: ['8.3', '8.4', '8.5']
     steps:
-    - uses: actions/checkout@v7
+    - name: Git checkout
+      uses: actions/checkout@v7
 
-    - name: Setup PHP with specific version of PECL extension
+    # Setup PHP
+    - name: Setup PHP ${{ matrix.php-version }} with PECL extension
       uses: shivammathur/setup-php@v2
       with:
-        php-version: '8.4'
-
-    - name: Validate composer.json and composer.lock
-      run: composer validate --strict
-
+        php-version: ${{ matrix.php-version }}
     - name: Cache Composer packages
       id: composer-cache
       uses: actions/cache@v6
@@ -28,8 +32,10 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-php-
 
+    # Instal & run tasks
+    - name: Validate composer.json and composer.lock
+      run: composer validate --strict
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
-
     - name: Run test suite
       run: composer run-script test
