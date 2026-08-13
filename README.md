@@ -1,6 +1,6 @@
 # FedoraFr
 
-[![Tests](https://github.com/Fedora-Fr/mw-fedorafr/actions/workflows/qa.yaml/badge.svg)](https://github.com/Fedora-Fr/mw-fedorafr/actions/workflows/qa.yaml)
+[![Tests](https://github.com/Fedora-Fr/mw-fedorafr/actions/workflows/devops.yml/badge.svg)](https://github.com/Fedora-Fr/mw-fedorafr/actions/workflows/devops.yml)
 
 Historical MediaWiki extension used by Fedora-Fr documentation.
 

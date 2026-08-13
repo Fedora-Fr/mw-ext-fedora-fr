@@ -110,17 +110,17 @@ class Parser {
 		return '« <em>' . htmlspecialchars( preg_replace( '/[-]+>/u', '→', $text ) ) . '</em> »';
 	}
 
-/**
- * cmd tag render.
- *
- * @code <cmd>dnf update</cmd>
- *
- * @param ?string $text String to parse.
- * @param array $argv Argument passed to the render.
- * @param mwParser $parser MediaWiki Parser.
- * @param PPFrame $frame MediaWiki PPFrame.
- * @return string String parsed.
- */
+	/**
+	 * cmd tag render.
+	 *
+	 * @code <cmd>dnf update</cmd>
+	 *
+	 * @param ?string $text String to parse.
+	 * @param array $argv Argument passed to the render.
+	 * @param mwParser $parser MediaWiki Parser.
+	 * @param PPFrame $frame MediaWiki PPFrame.
+	 * @return string String parsed.
+	 */
 	public static function renderCmd( ?string $text, array $argv, mwParser $parser, PPFrame $frame ) {
 		return '<tt>' . htmlspecialchars( $text ) . '</tt>';
 	}
